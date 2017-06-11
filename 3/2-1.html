@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkbox</title>
+</head>
+<body>
+	<!--點一下全選後所有checkbox會全勾，再點一下會全部取消，禁止使用jquery-->
+	<script>
+		function checkbox1(){
+			var input= document.getElementsByTagName('input');
+			for(var j=0; j<input.length; j++){
+				var item = input[j];
+				if(item.getAttribute('type') == 'checkbox'){
+					item.checked=!item.checked;
+				}
+			}
+		}
+	</script>
+
+	<input type="button" value="全選" onclick="checkbox1()"></br>
+	- 桌子<input type="checkbox" name="list" value="desktop"></br>
+	- 椅子<input type="checkbox" name="list" value="chair"></br>
+	- 電視<input type="checkbox" name="list" value="tv"></br>
+	- 洗衣機<input type="checkbox" name="list" value="wash"></br>
+	- 廚房<input type="checkbox" name="list" value="kitchen"></br>
+	- 浴室<input type="checkbox" name="list" value="bathroom"></br>
+</body>
+</html>
