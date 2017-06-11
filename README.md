@@ -1,6 +1,6 @@
 # PHP_Final-Test_107th
 ## 第一題 寄送email
-- mail.php
+- mail.php  
 PHPMailer, gmail的SMTP
 
 ## 第二題 PHP物件導向
